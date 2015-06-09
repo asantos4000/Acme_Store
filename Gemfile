@@ -20,6 +20,7 @@ gem 'carrierwave'
 gem 'pg_search'
 gem 'kaminari'
 gem 'friendly_id', '~> 5.1.0'
+gem 'pg'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
