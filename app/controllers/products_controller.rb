@@ -4,9 +4,20 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
-  def index
-    @products = Product.all
-  end
+    def index
+      # @products = Product.all
+
+
+      @query = params[:q]
+      if @query.nil?
+        @products = Product.all
+      else
+        @products = Product.where("nombre like ?", "%#{@query}%")
+      end
+
+      @products = @products.page params[:page]
+
+    end
 
   # GET /products/1
   # GET /products/1.json

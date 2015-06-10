@@ -27,9 +27,11 @@
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } if can? :destroy, product %></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
 
+  </tbody>
+
+</table>
+  <%= paginate @products %>
 <br>
 
 <%= link_to 'New Product', new_product_path %>
