@@ -22,6 +22,7 @@ gem 'kaminari'
 gem 'friendly_id', '~> 5.1.0'
 gem 'pg'
 gem 'slim'
+gem 'activeadmin', '~> 1.0.0.pre1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
